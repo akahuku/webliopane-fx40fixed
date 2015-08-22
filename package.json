@@ -1,0 +1,27 @@
+{
+  "name": "webliopane-fx40fixed",
+  "license": "MPL 2.0",
+  "author": "Original:HideAway / fx40fixed:akahuku",
+  "version": "0.1",
+  "fullName": "webliopane-fx40fixed",
+  "icon": "data/icon16.png",
+  "homepage": "http://appsweets.net/webliopane-fx40fixed/",
+  "id": "jid1-4PNC1uFNjqAy2w",
+  "description": "Unofficial fixed version of weblioPane",
+  "preferences": [
+	  {
+		  "type": "bool",
+		  "description": "Enable Weblio Pane",
+		  "name": "EnableWeblioPane",
+		  "value": true,
+		  "title": "Enable Weblio Pane"
+	  },
+	  {
+		  "type": "bool",
+		  "description": "English Word Only",
+		  "name": "EnglishWordOnly",
+		  "value": false,
+		  "title": "English Word Only"
+	  }
+  ]
+}
