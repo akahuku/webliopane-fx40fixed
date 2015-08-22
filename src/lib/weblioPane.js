@@ -20,7 +20,7 @@ var createPanel = function(aUrl){
 		width : 400,
 		height : 400,
 		contentURL : aUrl,
-		contentScriptFile :[data.url("menuPopup.js"), data.url("jquery-1.8.3.min.js")],
+		contentScriptFile : data.url("menuPopup.js"),
 		onShow : function(){
 			this.port.emit("show");
 		},
