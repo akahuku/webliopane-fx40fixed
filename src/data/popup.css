@@ -1,0 +1,41 @@
+#base{width:auto !important;}
+#baseSml{width:auto !important;}
+#baseLg{width:auto !important;}
+#baseMcr{width:auto !important;}
+#content{width:auto !important;}
+#contentSml{width:auto !important;}
+#tab{width:auto !important;}
+.wBar,.tBar,.eBar{width:auto !important;}
+.bar{width:auto !important;}
+#sps{width:auto !important;}
+.bodyText{width:auto !important;}
+.bodyTextSml{width:auto !important;}
+.bodyTextLg{width:auto !important;}
+.bodyTextHr{width:auto !important;}
+.eBarSml{width:auto !important;}
+#foot{width:auto !important;}
+#footSml{width:auto !important;}
+#footSml .footOpAc{width:auto !important;}
+#footSml .footOpMcr{width:auto !important;}
+#footMcr .footOpAc{width:auto !important;}
+#footMcr .footNxtMcr{width:auto !important;}
+#footMcr{width:auto !important;}
+.footMcrSpc{width:auto !important;}
+.footOpAcLTr{width:auto !important;}
+.footMcrFt{width:auto !important;}
+.footMcrSc{width:auto !important;}
+.footMcrTd{width:auto !important;}
+.footMcrFf{width:auto !important;}
+.footMcrFi{width:auto !important;}
+.footMcrSx{width:auto !important;}
+.bodyTextLemHr{width:auto !important}
+
+#baseLg{margin-left: auto;}
+#baseLg{margin-right: auto;}
+#wBody{height: auto;}
+#tBody{height: auto;}
+#eBody{height: auto;}
+.BodyTextLg{height: auto;}
+#wBodyLg{height: auto;}
+#tBodyLg{height: auto;}
+#eBodyLg{height: auto;}

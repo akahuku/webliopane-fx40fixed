@@ -5,22 +5,28 @@ const panels = require("sdk/panel");
 const {ActionButton} = require("sdk/ui/button/action");
 const sp = require("sdk/simple-prefs");
 
-var PanelOnShow = null;
-var PanelOnResize = null;
-var eUrl =  'http://api.weblio.jp/act/quote/v_1_0/e/?type=elarge&q=';
+const ENDPOINT_LARGE = 'http://api.weblio.jp/act/quote/v_1_0/e/?type=elarge&q=';
+const ENDPOINT_SMALL = 'http://api.weblio.jp/act/quote/v_1_0/e/?type=esmall&q=';
 
 var getIconUrl = function(){
 	return data.url(sp.prefs.EnableWeblioPane ?
 					"icon16.png" :
 					"icon16_off.png");
-}
+};
+
+var getEndPointUrl = function(){
+	return sp.prefs.UseDetailedPopup ?
+		ENDPOINT_LARGE :
+		ENDPOINT_SMALL;
+};
 
 var createPanel = function(aUrl){
 	return panels.Panel({
-		width : 400,
-		height : 400,
+		width : sp.prefs.PopupWidthPx,
+		height : sp.prefs.PopupMaxHeightPx,
 		contentURL : aUrl,
 		contentScriptFile : data.url("menuPopup.js"),
+		contentStyleFile : data.url("popup.css"),
 		onShow : function(){
 			this.port.emit("show");
 		},
@@ -47,12 +53,12 @@ var refreshPane = function (aPanel, text){
 		ref = true;
 	}
 	if ( !ref ) { return;}
-	var newPanel = createPanel(eUrl + encodeURIComponent(text));
+	var newPanel = createPanel(getEndPointUrl() + encodeURIComponent(text));
 	
-	newPanel.resize(400,1);
-	PanelOnResize = newPanel.port.on("panel-resize" , function( [ w , h ]){
-		w = 400;
-		h = h < 400 ? h : 400;
+	newPanel.resize(sp.prefs.PopupWidthPx,1);
+	newPanel.port.on("panel-resize" , function( [ w , h ]){
+		w = sp.prefs.PopupWidthPx;
+		h = Math.min(h, sp.prefs.PopupMaxHeightPx);
 		newPanel.resize(w,h);
 	});
 	return newPanel;

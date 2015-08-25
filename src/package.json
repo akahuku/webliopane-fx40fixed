@@ -2,7 +2,7 @@
   "name": "webliopane-fx40fixed",
   "license": "MPL 2.0",
   "author": "Original:HideAway / fx40fixed:akahuku",
-  "version": "0.1",
+  "version": "0.1.9",
   "fullName": "webliopane-fx40fixed",
   "icon": "data/icon16.png",
   "homepage": "https://github.com/akahuku/webliopane-fx40fixed",
@@ -14,17 +14,38 @@
   "preferences": [
     {
       "type": "bool",
-      "description": "Enable Weblio Pane",
+      "title": "Enable weblioPane",
+      "description": "weblioPane を有効にする",
       "name": "EnableWeblioPane",
-      "value": true,
-      "title": "Enable Weblio Pane"
+      "value": true
     },
     {
       "type": "bool",
-      "description": "English Word Only",
+      "title": "Pop up only with English words",
+      "description": "英単語のみポップアップ",
       "name": "EnglishWordOnly",
-      "value": false,
-      "title": "English Word Only"
+      "value": false
+    },
+    {
+      "type": "integer",
+      "title": "Popup width (in pixels)",
+      "description": "ポップアップの横幅(px)",
+      "name": "PopupWidthPx",
+      "value": 400
+    },
+    {
+      "type": "integer",
+      "title": "Popup max height (in pixels)",
+      "description": "ポップアップの最大の高さ(px)",
+      "name": "PopupMaxHeightPx",
+      "value": 400
+    },
+    {
+      "type": "bool",
+      "title": "Use detailed popup",
+      "description": "詳細なポップアップを使用する",
+      "name": "UseDetailedPopup",
+      "value": true
     }
   ]
 }
