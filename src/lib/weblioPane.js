@@ -46,7 +46,7 @@ var refreshPane = function (aPanel, text){
 	} else {
 		ref = true;
 	}
-	if ( !ref ) { return panel;}
+	if ( !ref ) { return;}
 	var newPanel = createPanel(eUrl + encodeURIComponent(text));
 	
 	newPanel.resize(400,1);
