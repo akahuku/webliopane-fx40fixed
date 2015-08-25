@@ -15,35 +15,30 @@
     {
       "type": "bool",
       "title": "Enable weblioPane",
-      "description": "weblioPane を有効にする",
       "name": "EnableWeblioPane",
       "value": true
     },
     {
       "type": "bool",
-      "title": "Pop up only with English words",
-      "description": "英単語のみポップアップ",
+      "title": "Pop-up only with English words",
       "name": "EnglishWordOnly",
       "value": false
     },
     {
       "type": "integer",
-      "title": "Popup width (in pixels)",
-      "description": "ポップアップの横幅(px)",
+      "title": "Pop-up width (in pixels)",
       "name": "PopupWidthPx",
       "value": 400
     },
     {
       "type": "integer",
-      "title": "Popup max height (in pixels)",
-      "description": "ポップアップの最大の高さ(px)",
+      "title": "Pop-up max height (in pixels)",
       "name": "PopupMaxHeightPx",
       "value": 400
     },
     {
       "type": "bool",
-      "title": "Use detailed popup",
-      "description": "詳細なポップアップを使用する",
+      "title": "Use detailed pop-up",
       "name": "UseDetailedPopup",
       "value": true
     }
