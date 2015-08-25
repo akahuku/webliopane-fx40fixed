@@ -8,20 +8,23 @@
   "homepage": "https://github.com/akahuku/webliopane-fx40fixed",
   "id": "jid1-4PNC1uFNjqAy2w",
   "description": "Unofficial fixed version of weblioPane",
+  "permissions": {
+    "private-browsing": true
+  },
   "preferences": [
-	  {
-		  "type": "bool",
-		  "description": "Enable Weblio Pane",
-		  "name": "EnableWeblioPane",
-		  "value": true,
-		  "title": "Enable Weblio Pane"
-	  },
-	  {
-		  "type": "bool",
-		  "description": "English Word Only",
-		  "name": "EnglishWordOnly",
-		  "value": false,
-		  "title": "English Word Only"
-	  }
+    {
+      "type": "bool",
+      "description": "Enable Weblio Pane",
+      "name": "EnableWeblioPane",
+      "value": true,
+      "title": "Enable Weblio Pane"
+    },
+    {
+      "type": "bool",
+      "description": "English Word Only",
+      "name": "EnglishWordOnly",
+      "value": false,
+      "title": "English Word Only"
+    }
   ]
 }
